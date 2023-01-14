@@ -87,4 +87,4 @@ touch logs/latest.log
 #PATH=$PWD/jre/bin:$PATH
 echo "Running server..."
 java -Xmx1G -Xms1G -jar server.jar nogui
- echo "Exit code $?"
+echo "Exit code $?"
