@@ -48,7 +48,7 @@ require_env() {
   if [[ -z "${!1}" ]]; then
     echo "Environment variable $1 not set. "
     echo "Make a new secret called $1 and set it to $2"
-    exit
+    # exit
   fi
 }
 require_executable() {
