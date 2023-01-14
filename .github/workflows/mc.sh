@@ -86,5 +86,5 @@ touch logs/latest.log
 # Start minecraft
 #PATH=$PWD/jre/bin:$PATH
 echo "Running server..."
-java -Xmx1G -Xms1G -jar paper-1.19.3-368.jar nogui
+java -Xmx512M -Xms512M -jar paper-1.19.3-368.jar nogui
 echo "Exit code $?"
