@@ -24,7 +24,7 @@ download() {
     wget -O jre.tar.gz "https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-x64_bin.tar.gz"
     tar -zxf jre.tar.gz
     rm -rf jre.tar.gz
-    #mv ./jre* ./jre
+    mv ./jre* ./jre
     echo JRE downloaded
     wget -O server.jar "https://api.papermc.io/v2/projects/paper/versions/1.19.3/builds/368/downloads/paper-1.19.3-368.jar"
     echo Paper downloaded
