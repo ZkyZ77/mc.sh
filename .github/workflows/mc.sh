@@ -73,8 +73,7 @@ echo "Minecraft server starting, please wait" > $root/ip.txt
 mkdir -p ./logs
 touch ./logs/temp # avoid "no such file or directory"
 rm ./logs/*
-# orig_server_ip=`curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'`
-trimmed_server_ip=`echo $orig_server_ip | grep -o '[a-zA-Z0-9.]*\.ngrok.io[0-9:]*'`
+orig_server_ip=`curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'`
 server_ip="${trimmed_server_ip:-$orig_server_ip}"
 echo "Server IP is: $server_ip"
 echo "Server running on: $server_ip" > $root/ip.txt
