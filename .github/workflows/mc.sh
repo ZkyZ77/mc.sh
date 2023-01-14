@@ -61,8 +61,8 @@ require_file "eula.txt"
 require_file "server.properties"
 require_file "server.jar"
 # java
-#require_dir "jre"
-#require_executable "jre/bin/java"
+require_dir "jre"
+require_executable "jre/bin/java"
 
 
 # start web server
