@@ -26,7 +26,7 @@ download() {
     #rm -rf jre.tar.gz
     #mv ./jre* ./jre
     #echo JRE downloaded
-    wget -O server.jar "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar"
+    wget -O server.jar "https://api.papermc.io/v2/projects/paper/versions/1.19.3/builds/368/downloads/paper-1.19.3-368.jar"
     echo Paper downloaded
     wget -O server.properties "https://files.mikeylab.com/xpire/server.properties"
     echo Server properties downloaded
@@ -86,5 +86,5 @@ touch logs/latest.log
 # Start minecraft
 #PATH=$PWD/jre/bin:$PATH
 echo "Running server..."
-java -Xmx1G -Xms1G -jar server.jar nogui
+java -Xmx1G -Xms1G -jar paper-1.19.3-368.jar nogui
 echo "Exit code $?"
