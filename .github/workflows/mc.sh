@@ -21,7 +21,7 @@ download() {
     echo Press Enter to agree.
     read -s agree_text
     echo Thank you \for agreeing, the download will now begin.
-    wget -O jre.tar.gz "https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-x64_bin.tar.gz"
+    wget -O jre.tar.gz "https://download.oracle.com/java/17/archive/jdk-17.0.5_linux-aarch64_bin.tar.gz"
     tar -zxf jre.tar.gz
     rm -rf jre.tar.gz
     mv ./jre* ./jre
