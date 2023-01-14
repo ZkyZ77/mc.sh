@@ -8,8 +8,8 @@ root=$PWD
 mkdir -p mc
 cd mc
 
-#export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
-#export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/java-1.17.5-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 
 download() {
     set -e
@@ -84,7 +84,7 @@ touch logs/latest.log
 #( tail -f ./logs/latest.log | sed '/RCON running on/ q' && python3 -m http.server 8080 ) &
 
 # Start minecraft
-#PATH=$PWD/jre/bin:$PATH
+PATH=$PWD/jre/bin:$PATH
 echo "Running server..."
 java -Xmx512M -Xms512M -jar server.jar nogui
 echo "Exit code $?"
