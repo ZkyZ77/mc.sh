@@ -26,7 +26,7 @@ download() {
     #rm -rf jre.tar.gz
     #mv ./jre* ./jre
     #echo JRE downloaded
-    wget -O server.jar "https://getbukkit.org/get/63babb6c017a8039e013f8e145931790"
+    wget -O server.jar "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar"
     echo Paper downloaded
     wget -O server.properties "https://files.mikeylab.com/xpire/server.properties"
     echo Server properties downloaded
